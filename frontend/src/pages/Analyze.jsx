@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Spinner from '../components/Spinner.jsx';
 import Disclaimer from '../components/Disclaimer.jsx';
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000';
 
 const doTips = [
   'Use a single face, front-facing, good light, no motion blur.',
