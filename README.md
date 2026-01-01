@@ -100,25 +100,3 @@ Open the shown URL (typically `http://localhost:5173`).
 
 - Inputs are processed in-memory and not stored; the heatmap is a static placeholder.
 
-### Limitations / Not Supported
-
-- No diagnosis, prescriptions, or surgical planning
-- Not FDA/CE certified; academic use only
-- Does not process raw DNA or lab/biopsy/CT/MRI data
-- No emergency alerts or legal medical certificates
-- Camera/lighting quality affects results; may produce false positives/negatives
-- Requires internet; no offline sync
-
-### Future Roadmap
-
-See [**ROADMAP.md**](./ROADMAP.md) for a complete feature matrix and development timeline.
-
-**Upcoming Major Releases:**
-- **v0.3 (Q1 2026):** 3D depth scans, facial micro-movements, enhanced voice analysis
-- **v0.4 (Q2 2026):** Pain/distress detection, emotional indicators, syndrome phenotyping
-- **v0.5 (Q3 2026):** Deep learning models, ensemble methods, continuous learning
-- **v0.6 (Q4 2026):** SHAP/LIME explanations, counterfactuals, feedback loops
-- **v0.7 (Q1 2027):** FDA/CE pathways, clinical validation, EHR integration, ISO standards
-- **v0.8 (Q2 2027):** HIPAA, encryption, federated learning, on-device inference
-- **v0.9 (Q3 2027):** iOS/Android, clinician portal, research toolkit, multi-deployment
-- **v1.0 (Q4 2027):** Production release with API, licensing, enterprise support
