@@ -22,11 +22,12 @@ STATIC_DIR = os.path.join(BASE_DIR, "static")
 
 app = FastAPI(title="HealthMorph AI", description="Academic MVP for AI-assisted health risk indication", version="0.2.0")
 
-# Allow local dev frontend (Vite default port 5173)
-origins = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-]
+# Allow configurable CORS origins (comma-separated) or wildcard
+cors_raw = settings.cors_origins.strip()
+if cors_raw == "*":
+    origins = ["*"]
+else:
+    origins = [o.strip() for o in cors_raw.split(",") if o.strip()]
 
 app.add_middleware(
     CORSMiddleware,

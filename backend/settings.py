@@ -19,5 +19,8 @@ class Settings:
     retain_media: bool = os.getenv("HM_RETAIN_MEDIA", "false").lower() == "true"
     media_ttl_seconds: int = int(os.getenv("HM_MEDIA_TTL", "86400"))
 
+    # CORS
+    cors_origins: str = os.getenv("HM_CORS_ORIGINS", "*")
+
 
 settings = Settings()
